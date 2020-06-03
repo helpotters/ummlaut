@@ -1,0 +1,70 @@
+/*CSS for the Main Page*/
+/*Table of Contents*/
+/*1.Layout
+  1.1 Main Sizing
+  1.2 Padding
+*/
+/*2. Typography
+  2.1. Fonts
+  2.2. Colors
+  2.3. Size
+*/
+
+/*enable cookies for this part of the page: multiple themes*/
+/*3. Theming Colors
+  3.1. Page
+*/
+/*1.Layout*/
+  /*1.1 Main Sizing*/
+  html,body{
+    height: 100%;
+    overflow: auto;
+  }
+  /*The left and right columns*/
+  img{
+    height: 4em;
+    width: 4em;
+    float: right;
+  }
+  /*Left Elements*/
+    /*Options and confirmation elements*/
+  /*1.2 Padding*/
+    #main_container{
+      padding: 2.5em;
+    }
+    div.col{
+      padding: 1em;
+    }
+    div.col#right{
+    }
+    div#output_box{
+      padding:2.5em;
+    }
+    div.row{
+    }
+    div.row#config{
+      padding: .4em;
+    }
+    img{
+      padding: 1em;
+    }
+/*2. Typography*/
+  /*2.1 Fonts*/
+  /*2.2 Colors*/
+  /*2.3 Sizing*/
+/*3. Theming*/
+  /*3.1 Colors*/
+  /*3.2 Borders*/
+  div#left{
+    border: 1px solid black;
+  }
+  div#right{
+  }
+  div#right>div#output_box{
+    border-radius: 5em;
+    border: 1px solid black;
+  }
+  div.row{
+    border: 1px solid black;
+  }
+/*4.Animations*/

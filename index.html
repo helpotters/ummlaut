@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=`device-width`, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<!--Favicons-->
+		<link rel="apple-touch-icon" sizes="57x57" href="./assets/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="./assets/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="./assets/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="./assets/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="./assets/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="./assets/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="./assets/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="./assets/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="./assets/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+		<link rel="manifest" href="./assets/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="./assets/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+  <!--CSS Links-->
+  <link rel="stylesheet" type="text/css" href="./css/master.css">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<title>ummlaut</title>
+</head>
+
+<body>
+	<!-- Image and text -->
+	<!-- Image and text -->
+	<div class="container-fluid" id="main_cont">
+		<img src="./assets/homepage/ummlaut.png" style="height:4em; width:4em;z-index:1; position:absolute;top:4em;left:48.5%;"alt="">
+
+    <!--Left Column-->
+		<div class="col-sm-12 col-md-6 col-lg-6 p-16" id="left">
+			<div class="row container-fluid" id="input">
+        <!--Users Type Here-->
+				<div class="container-fluid">
+					<textarea id="textarea"   name="name" rows="6" id="input" placeholder="Copypaste your sentences here..." style="min-width:100%;min-height:100%;border:none;"></textarea>
+				</div>
+        <!--Confirmation + Options-->
+				<div class="row btn-group" id="buttons">
+						<button class="btn btn-primary " type="button">Confirm</button>
+            <button class="btn btn-primary active" type="button">strip alphanumeral</button>
+				</div>
+			</div>
+			<div class="row d-flex" id="info_plus_ad">
+        <!--Key Press Info-->
+        <div class="col-lg-12 col-md-12 col-sm-12 ">
+          <div class="well well-lg">
+            <p>To type the appropriate characters, see your method below:</p>
+            <ul class="list-group">
+              <li class="list-group-item"><kbd>Alt+Code</kbd>(Windows)</li>
+              <li class="list-group-item"><kbd>Option+Unicode</kbd>(Mac)</li>
+              <li class="list-group-item"><kbd>Ctrl+Shirt+U</kbd>, then type in the hex value once you see the blinking <kbd><em>u</em></kbd> character.(Linux)</li>
+            </ul>
+          </div>
+        </div>
+        <!--Ad Insert Here-->
+        <div class="col-lg-12 col-md-12 col-sm-12 align-items-end" id="ad">
+          <div class="well well-sm">
+            <p>i am a test advertisment. please purchase my goods and/or services.</p>
+          </div>
+        </div>
+      </div>
+		</div>
+    <!--Right Column-->
+		<div class="col-sm-12 col-md-6 col-lg-6 p-16" id="right">
+      <div class="col-sm-12 col-lg-12" id="output" style="overflow:auto">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="characters">
+            <ul class="list-group">
+            <li class="list-group-item">Char</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="alt-codes">
+            <ul class="list-group">
+            <li class="list-group-item">Alt</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="unicodes">
+            <ul class="list-group">
+            <li class="list-group-item">Unicode</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
+  <script src="./js/main.js" charset="utf-8"></script>
+  <script src="./js/textToCodes.js" charset="utf-8"></script>
+</body>
+
+</html>
