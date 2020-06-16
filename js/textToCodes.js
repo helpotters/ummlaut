@@ -1,6 +1,6 @@
 //This snippet takes the text and outputs the unicode for linux typing
 
-function wordToArray(word){
+function wordTo`Array(word){
   //turn word into an array to work with, removes all spaces
   let wordArray = word.trim().replace(/ /g, '').split('');
   return wordArray;
